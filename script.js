@@ -47,25 +47,34 @@ fruitGummies.addEventListener("click", () => {
 let moneyForm = document.getElementById("moneyform");
 let numberInput = document.getElementById("numberinput");
 let coinType = document.getElementById("cointype");
-let penny = document.getElementById("penny");
-let nickel = document.getElementById("nickel");
-let dime = document.getElementById("dime");
-let quarter = document.getElementById("quarter");
+
 
 // submit event listener --> attach form to inputs
 // add coins to page with add element
 moneyForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let numberOfCoins = numberInput.value;
-    let typeOfCoin = coinType.value;
+    let coin = coinType.value;
 
-    if (typeOfCoin === penny) {
+    if (coin === "Penny") {
         console.log("it's a penny!");
     }
-    //loop through to numberofcoins.length? and keep displaying
-    // append coins to bottom of form
-    // add name with inner text
+
+    else if (coin === "Nickel") {
+        console.log("it's a nickel!");
+    }
+
+    else if (coin === "Dime") {
+        console.log("it's a dime!");
+    }
+
+    else if (coin === "Quarter") {
+        console.log("it's a quarter!");
+    }
+
+    //loop through w/ numberOfCoins.length? and keep displaying
+    // append coins to bottom of the moneyForm
+    // add name to coin with inner text
 
 });
 
