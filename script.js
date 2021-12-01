@@ -14,79 +14,55 @@ let runningTotal = 0;
 
 limeCola.addEventListener("click", () => {
     runningTotal += 2;
-    console.log(runningTotal);
+    // console.log(runningTotal);
     total.innerText = runningTotal;
 });
 
 saltedPeanuts.addEventListener("click", () => {
     runningTotal += 3;
-    console.log(runningTotal);
+    // console.log(runningTotal);
     total.innerText = runningTotal;
 });
 
 chocolateBar.addEventListener("click", () => {
     runningTotal += 4;
-    console.log(runningTotal);
+    // console.log(runningTotal);
     total.innerText = runningTotal;
 });
 
 fruitGummies.addEventListener("click", () => {
     runningTotal += 6;
-    console.log(runningTotal);
+    // console.log(runningTotal);
     total.innerText = runningTotal;
 });
 
 
 // #2 - MAKE MONEY
-// text input: number
-// select: penny, nickel, dime, quarter
-// when form submitted, add number of coins to page
-// when individual coin is clicked, remove just that coin
 
-//set variables
 let moneyForm = document.getElementById("moneyform");
 let numberInput = document.getElementById("numberinput");
 let coinType = document.getElementById("cointype");
 
-
-// submit event listener --> attach form to inputs
-// add coins to page with add element
+//submit event
 moneyForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let coin = coinType.value;
+    let typeOfCoin = coinType.value;
+    let numberOfCoins = numberInput.value;
 
-    if (coin === "Penny") {
-        console.log("it's a penny!");
+    //loop to make new coins based on number and type input
+    for (let i = 0; i < numberOfCoins; i++) {
+        let coinBlank = document.createElement("div");
+        coinBlank.classList.add("coinblank");
+        coinBlank.innerText = typeOfCoin;
+        moneyForm.append(coinBlank);
+
+        //add listener inside each new coin to allow for deleting
+        coinBlank.addEventListener("click", () => {
+            coinBlank.remove();
+        })
     }
-
-    else if (coin === "Nickel") {
-        console.log("it's a nickel!");
-    }
-
-    else if (coin === "Dime") {
-        console.log("it's a dime!");
-    }
-
-    else if (coin === "Quarter") {
-        console.log("it's a quarter!");
-    }
-
-    //loop through w/ numberOfCoins.length? and keep displaying
-    // append coins to bottom of the moneyForm
-    // add name to coin with inner text
-
 });
-
-// append coins to bottom of form
-// add name with inner text
-
-
-//removing coins 
-
-
-
-
 
 
 // #3 - LIGHT BULB

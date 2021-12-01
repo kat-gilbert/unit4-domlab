@@ -13,38 +13,15 @@ h2 {
 }
 
 
-#penny {
+.coinblank {
     border: 1px solid black;
     height: 75px;
     width: 75px;
     background-color: lightgray;
     border-radius: 50%;
+    text-align: center;
+    text-justify: auto;
 }
-
-#nickel {
-    border: 1px solid black;
-    height: 75px;
-    width: 75px;
-    background-color: lightgray;
-    border-radius: 50%;
-}
-
-#dime {
-    border: 1px solid black;
-    height: 75px;
-    width: 75px;
-    background-color: lightgray;
-    border-radius: 50%;
-}
-
-#quarter {
-    border: 1px solid black;
-    height: 75px;
-    width: 75px;
-    background-color: lightgray;
-    border-radius: 50%;
-}
-
 
 
 
