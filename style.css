@@ -1,0 +1,50 @@
+h2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.fourbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#lightbulboff {
+    padding: 10px;
+    background-color: darkgray;
+    color: white;
+    width: 125px;    
+    margin: 30px;
+    text-align: center;
+}
+
+#lightbulbon {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    width: 125px;    
+    margin: 30px;
+    text-align: center;
+}
+
+.lightbulbswitches {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
