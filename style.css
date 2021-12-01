@@ -13,11 +13,37 @@ h2 {
 }
 
 
+#penny {
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
+#nickel {
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
+#dime {
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
-
-
+#quarter {
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
 
 

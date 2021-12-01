@@ -16,7 +16,6 @@ limeCola.addEventListener("click", () => {
     runningTotal += 2;
     console.log(runningTotal);
     total.innerText = runningTotal;
-
 });
 
 saltedPeanuts.addEventListener("click", () => {
@@ -39,6 +38,45 @@ fruitGummies.addEventListener("click", () => {
 
 
 // #2 - MAKE MONEY
+// text input: number
+// select: penny, nickel, dime, quarter
+// when form submitted, add number of coins to page
+// when individual coin is clicked, remove just that coin
+
+//set variables
+let moneyForm = document.getElementById("moneyform");
+let numberInput = document.getElementById("numberinput");
+let coinType = document.getElementById("cointype");
+let penny = document.getElementById("penny");
+let nickel = document.getElementById("nickel");
+let dime = document.getElementById("dime");
+let quarter = document.getElementById("quarter");
+
+// submit event listener --> attach form to inputs
+// add coins to page with add element
+moneyForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let numberOfCoins = numberInput.value;
+    let typeOfCoin = coinType.value;
+
+    if (typeOfCoin === penny) {
+        console.log("it's a penny!");
+    }
+    //loop through to numberofcoins.length? and keep displaying
+    // append coins to bottom of form
+    // add name with inner text
+
+});
+
+// append coins to bottom of form
+// add name with inner text
+
+
+//removing coins 
+
+
+
 
 
 
@@ -65,7 +103,7 @@ btnLightOff.addEventListener("click", () => {
     lightOff.style.color = "white";
 });
 
-// is only working if its the second button clicked??????
+// its only working if it is the second button clicked??????
 // toggle between light and dark (display the opposite)
 btnLightToggle.addEventListener("click", () => {
     if (lightOff.style.backgroundColor === "darkgray") {
